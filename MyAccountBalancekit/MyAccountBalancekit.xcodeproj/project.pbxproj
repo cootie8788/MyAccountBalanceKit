@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA6A0FD92965D4CB00C3AA10 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A0FD82965D4CB00C3AA10 /* NibOwnerLoadable.swift */; };
+		EA6A0FDD2965D5BB00C3AA10 /* MyAccountTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FDC2965D5BB00C3AA10 /* MyAccountTopView.xib */; };
+		EA6A0FDF2965D60000C3AA10 /* MyAccountTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A0FDE2965D60000C3AA10 /* MyAccountTopView.swift */; };
+		EA6A0FE42965D9A200C3AA10 /* avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FE32965D9A200C3AA10 /* avatar@3x.png */; };
+		EA6A0FE62965D9D100C3AA10 /* iconBell01Nomal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FE52965D9D100C3AA10 /* iconBell01Nomal@3x.png */; };
+		EA6A0FE92965DD6F00C3AA10 /* AccountBalanceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FE82965DD6E00C3AA10 /* AccountBalanceView.xib */; };
+		EA6A0FEB2965DDC200C3AA10 /* AccountBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A0FEA2965DDC200C3AA10 /* AccountBalanceView.swift */; };
+		EA6A0FED2965E16100C3AA10 /* iconEye01On@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FEC2965E16100C3AA10 /* iconEye01On@3x.png */; };
+		EA6A0FEF2965E59900C3AA10 /* button00ElementMenuTransfer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FEE2965E59900C3AA10 /* button00ElementMenuTransfer@3x.png */; };
+		EA6A0FF12965E5AF00C3AA10 /* button00ElementMenuPayment@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FF02965E5AF00C3AA10 /* button00ElementMenuPayment@3x.png */; };
+		EA6A0FF32965E5C400C3AA10 /* button00ElementMenuUtility@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FF22965E5C400C3AA10 /* button00ElementMenuUtility@3x.png */; };
+		EA6A0FF52965E5DB00C3AA10 /* button01Scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FF42965E5DA00C3AA10 /* button01Scan@3x.png */; };
+		EA6A0FF72965E61A00C3AA10 /* button00ElementMenuQRcode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FF62965E61A00C3AA10 /* button00ElementMenuQRcode@3x.png */; };
+		EA6A0FF92965E62C00C3AA10 /* button00ElementMenuTopUp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FF82965E62C00C3AA10 /* button00ElementMenuTopUp@3x.png */; };
+		EA6A0FFB2965E6C100C3AA10 /* PaymentMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A0FFA2965E6C100C3AA10 /* PaymentMethodView.swift */; };
+		EA6A0FFD2965E6E400C3AA10 /* PaymentMethodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FFC2965E6E400C3AA10 /* PaymentMethodView.xib */; };
+		EA6A10002965E7F300C3AA10 /* PaymentMethodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A0FFE2965E7F300C3AA10 /* PaymentMethodCollectionViewCell.swift */; };
+		EA6A10012965E7F300C3AA10 /* PaymentMethodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6A0FFF2965E7F300C3AA10 /* PaymentMethodCollectionViewCell.xib */; };
+		EA6A10052965E8C000C3AA10 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A10042965E8C000C3AA10 /* PaymentMethod.swift */; };
+		EA6A10072965F63800C3AA10 /* MyFavoriteTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A10062965F63800C3AA10 /* MyFavoriteTitleView.swift */; };
+		EA6A10092965F66400C3AA10 /* MyFavoriteTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6A10082965F66400C3AA10 /* MyFavoriteTitleView.xib */; };
+		EA6A100B2965F76600C3AA10 /* iconArrow01Next@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A100A2965F76600C3AA10 /* iconArrow01Next@3x.png */; };
+		EA6A100D2965FACB00C3AA10 /* FavoriteEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A100C2965FACB00C3AA10 /* FavoriteEmptyView.swift */; };
+		EA6A100F2965FAE500C3AA10 /* FavoriteEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6A100E2965FAE500C3AA10 /* FavoriteEmptyView.xib */; };
+		EA6A10112965FBAC00C3AA10 /* button00ElementScrollEmpty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A10102965FBAC00C3AA10 /* button00ElementScrollEmpty@3x.png */; };
+		EA94BD322965CC7C00BAFD61 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94BD302965CC7C00BAFD61 /* MyAccountViewController.swift */; };
+		EA94BD332965CC7C00BAFD61 /* MyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA94BD312965CC7C00BAFD61 /* MyAccountViewController.xib */; };
 		EAE797F72965A6FA0014AF4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE797F62965A6FA0014AF4D /* AppDelegate.swift */; };
 		EAE797F92965A6FA0014AF4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE797F82965A6FA0014AF4D /* SceneDelegate.swift */; };
 		EAE797FB2965A6FA0014AF4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE797FA2965A6FA0014AF4D /* ViewController.swift */; };
@@ -36,6 +63,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA6A0FD82965D4CB00C3AA10 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		EA6A0FDC2965D5BB00C3AA10 /* MyAccountTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountTopView.xib; sourceTree = "<group>"; };
+		EA6A0FDE2965D60000C3AA10 /* MyAccountTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountTopView.swift; sourceTree = "<group>"; };
+		EA6A0FE32965D9A200C3AA10 /* avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@3x.png"; sourceTree = "<group>"; };
+		EA6A0FE52965D9D100C3AA10 /* iconBell01Nomal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconBell01Nomal@3x.png"; sourceTree = "<group>"; };
+		EA6A0FE82965DD6E00C3AA10 /* AccountBalanceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountBalanceView.xib; sourceTree = "<group>"; };
+		EA6A0FEA2965DDC200C3AA10 /* AccountBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceView.swift; sourceTree = "<group>"; };
+		EA6A0FEC2965E16100C3AA10 /* iconEye01On@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconEye01On@3x.png"; sourceTree = "<group>"; };
+		EA6A0FEE2965E59900C3AA10 /* button00ElementMenuTransfer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button00ElementMenuTransfer@3x.png"; sourceTree = "<group>"; };
+		EA6A0FF02965E5AF00C3AA10 /* button00ElementMenuPayment@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button00ElementMenuPayment@3x.png"; sourceTree = "<group>"; };
+		EA6A0FF22965E5C400C3AA10 /* button00ElementMenuUtility@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button00ElementMenuUtility@3x.png"; sourceTree = "<group>"; };
+		EA6A0FF42965E5DA00C3AA10 /* button01Scan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button01Scan@3x.png"; sourceTree = "<group>"; };
+		EA6A0FF62965E61A00C3AA10 /* button00ElementMenuQRcode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button00ElementMenuQRcode@3x.png"; sourceTree = "<group>"; };
+		EA6A0FF82965E62C00C3AA10 /* button00ElementMenuTopUp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button00ElementMenuTopUp@3x.png"; sourceTree = "<group>"; };
+		EA6A0FFA2965E6C100C3AA10 /* PaymentMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodView.swift; sourceTree = "<group>"; };
+		EA6A0FFC2965E6E400C3AA10 /* PaymentMethodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodView.xib; sourceTree = "<group>"; };
+		EA6A0FFE2965E7F300C3AA10 /* PaymentMethodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA6A0FFF2965E7F300C3AA10 /* PaymentMethodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA6A10042965E8C000C3AA10 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		EA6A10062965F63800C3AA10 /* MyFavoriteTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteTitleView.swift; sourceTree = "<group>"; };
+		EA6A10082965F66400C3AA10 /* MyFavoriteTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFavoriteTitleView.xib; sourceTree = "<group>"; };
+		EA6A100A2965F76600C3AA10 /* iconArrow01Next@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconArrow01Next@3x.png"; sourceTree = "<group>"; };
+		EA6A100C2965FACB00C3AA10 /* FavoriteEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteEmptyView.swift; sourceTree = "<group>"; };
+		EA6A100E2965FAE500C3AA10 /* FavoriteEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteEmptyView.xib; sourceTree = "<group>"; };
+		EA6A10102965FBAC00C3AA10 /* button00ElementScrollEmpty@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button00ElementScrollEmpty@3x.png"; sourceTree = "<group>"; };
+		EA94BD302965CC7C00BAFD61 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		EA94BD312965CC7C00BAFD61 /* MyAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountViewController.xib; sourceTree = "<group>"; };
 		EAE797F32965A6FA0014AF4D /* MyAccountBalancekit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAccountBalancekit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE797F62965A6FA0014AF4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE797F82965A6FA0014AF4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +130,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA6A0FD72965D48800C3AA10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A0FD82965D4CB00C3AA10 /* NibOwnerLoadable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA6A0FDA2965D4FC00C3AA10 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EAE797F82965A6FA0014AF4D /* SceneDelegate.swift */,
+				EAE797F62965A6FA0014AF4D /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EA6A0FDB2965D54500C3AA10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A0FE72965DD2200C3AA10 /* MyAccount */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA6A0FE02965D8DF00C3AA10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A0FE12965D90400C3AA10 /* images */,
+				EAE797FF2965A6FC0014AF4D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA6A0FE12965D90400C3AA10 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A0FE22965D91F00C3AA10 /* MyAccount */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		EA6A0FE22965D91F00C3AA10 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A0FE32965D9A200C3AA10 /* avatar@3x.png */,
+				EA6A0FE52965D9D100C3AA10 /* iconBell01Nomal@3x.png */,
+				EA6A0FEC2965E16100C3AA10 /* iconEye01On@3x.png */,
+				EA6A0FEE2965E59900C3AA10 /* button00ElementMenuTransfer@3x.png */,
+				EA6A0FF02965E5AF00C3AA10 /* button00ElementMenuPayment@3x.png */,
+				EA6A0FF22965E5C400C3AA10 /* button00ElementMenuUtility@3x.png */,
+				EA6A0FF42965E5DA00C3AA10 /* button01Scan@3x.png */,
+				EA6A0FF62965E61A00C3AA10 /* button00ElementMenuQRcode@3x.png */,
+				EA6A0FF82965E62C00C3AA10 /* button00ElementMenuTopUp@3x.png */,
+				EA6A100A2965F76600C3AA10 /* iconArrow01Next@3x.png */,
+				EA6A10102965FBAC00C3AA10 /* button00ElementScrollEmpty@3x.png */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		EA6A0FE72965DD2200C3AA10 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A0FDE2965D60000C3AA10 /* MyAccountTopView.swift */,
+				EA6A0FDC2965D5BB00C3AA10 /* MyAccountTopView.xib */,
+				EA6A0FEA2965DDC200C3AA10 /* AccountBalanceView.swift */,
+				EA6A0FE82965DD6E00C3AA10 /* AccountBalanceView.xib */,
+				EA6A0FFA2965E6C100C3AA10 /* PaymentMethodView.swift */,
+				EA6A0FFC2965E6E400C3AA10 /* PaymentMethodView.xib */,
+				EA6A0FFE2965E7F300C3AA10 /* PaymentMethodCollectionViewCell.swift */,
+				EA6A0FFF2965E7F300C3AA10 /* PaymentMethodCollectionViewCell.xib */,
+				EA6A10062965F63800C3AA10 /* MyFavoriteTitleView.swift */,
+				EA6A10082965F66400C3AA10 /* MyFavoriteTitleView.xib */,
+				EA6A100C2965FACB00C3AA10 /* FavoriteEmptyView.swift */,
+				EA6A100E2965FAE500C3AA10 /* FavoriteEmptyView.xib */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		EA6A10022965E83A00C3AA10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A10032965E86700C3AA10 /* Business */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA6A10032965E86700C3AA10 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A10042965E8C000C3AA10 /* PaymentMethod.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		EA94BD2E2965CC5600BAFD61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA94BD2F2965CC6200BAFD61 /* MyAccount */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EA94BD2F2965CC6200BAFD61 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				EA94BD302965CC7C00BAFD61 /* MyAccountViewController.swift */,
+				EA94BD312965CC7C00BAFD61 /* MyAccountViewController.xib */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
 		EAE797EA2965A6FA0014AF4D = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +265,14 @@
 		EAE797F52965A6FA0014AF4D /* MyAccountBalancekit */ = {
 			isa = PBXGroup;
 			children = (
-				EAE797F62965A6FA0014AF4D /* AppDelegate.swift */,
-				EAE797F82965A6FA0014AF4D /* SceneDelegate.swift */,
+				EA94BD2E2965CC5600BAFD61 /* ViewControllers */,
+				EA6A0FDB2965D54500C3AA10 /* Views */,
+				EA6A10022965E83A00C3AA10 /* Models */,
+				EA6A0FDA2965D4FC00C3AA10 /* Common */,
+				EA6A0FD72965D48800C3AA10 /* Extensions */,
+				EA6A0FE02965D8DF00C3AA10 /* Resources */,
 				EAE797FA2965A6FA0014AF4D /* ViewController.swift */,
 				EAE797FC2965A6FA0014AF4D /* Main.storyboard */,
-				EAE797FF2965A6FC0014AF4D /* Assets.xcassets */,
 				EAE798012965A6FC0014AF4D /* LaunchScreen.storyboard */,
 				EAE798042965A6FC0014AF4D /* Info.plist */,
 			);
@@ -231,9 +400,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6A0FFD2965E6E400C3AA10 /* PaymentMethodView.xib in Resources */,
+				EA6A0FE42965D9A200C3AA10 /* avatar@3x.png in Resources */,
+				EA6A0FE62965D9D100C3AA10 /* iconBell01Nomal@3x.png in Resources */,
+				EA6A10112965FBAC00C3AA10 /* button00ElementScrollEmpty@3x.png in Resources */,
+				EA6A0FF52965E5DB00C3AA10 /* button01Scan@3x.png in Resources */,
+				EA6A100F2965FAE500C3AA10 /* FavoriteEmptyView.xib in Resources */,
 				EAE798032965A6FC0014AF4D /* LaunchScreen.storyboard in Resources */,
+				EA6A0FED2965E16100C3AA10 /* iconEye01On@3x.png in Resources */,
+				EA6A0FDD2965D5BB00C3AA10 /* MyAccountTopView.xib in Resources */,
+				EA6A10092965F66400C3AA10 /* MyFavoriteTitleView.xib in Resources */,
+				EA6A0FF72965E61A00C3AA10 /* button00ElementMenuQRcode@3x.png in Resources */,
 				EAE798002965A6FC0014AF4D /* Assets.xcassets in Resources */,
+				EA6A0FE92965DD6F00C3AA10 /* AccountBalanceView.xib in Resources */,
+				EA94BD332965CC7C00BAFD61 /* MyAccountViewController.xib in Resources */,
+				EA6A10012965E7F300C3AA10 /* PaymentMethodCollectionViewCell.xib in Resources */,
+				EA6A0FEF2965E59900C3AA10 /* button00ElementMenuTransfer@3x.png in Resources */,
+				EA6A0FF12965E5AF00C3AA10 /* button00ElementMenuPayment@3x.png in Resources */,
+				EA6A0FF32965E5C400C3AA10 /* button00ElementMenuUtility@3x.png in Resources */,
+				EA6A100B2965F76600C3AA10 /* iconArrow01Next@3x.png in Resources */,
 				EAE797FE2965A6FA0014AF4D /* Main.storyboard in Resources */,
+				EA6A0FF92965E62C00C3AA10 /* button00ElementMenuTopUp@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +445,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6A0FDF2965D60000C3AA10 /* MyAccountTopView.swift in Sources */,
+				EA6A0FEB2965DDC200C3AA10 /* AccountBalanceView.swift in Sources */,
 				EAE797FB2965A6FA0014AF4D /* ViewController.swift in Sources */,
+				EA6A10002965E7F300C3AA10 /* PaymentMethodCollectionViewCell.swift in Sources */,
+				EA6A100D2965FACB00C3AA10 /* FavoriteEmptyView.swift in Sources */,
 				EAE797F72965A6FA0014AF4D /* AppDelegate.swift in Sources */,
+				EA6A0FFB2965E6C100C3AA10 /* PaymentMethodView.swift in Sources */,
+				EA94BD322965CC7C00BAFD61 /* MyAccountViewController.swift in Sources */,
 				EAE797F92965A6FA0014AF4D /* SceneDelegate.swift in Sources */,
+				EA6A0FD92965D4CB00C3AA10 /* NibOwnerLoadable.swift in Sources */,
+				EA6A10052965E8C000C3AA10 /* PaymentMethod.swift in Sources */,
+				EA6A10072965F63800C3AA10 /* MyFavoriteTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
