@@ -69,7 +69,7 @@ extension PaymentMethodView: UICollectionViewDataSource, UICollectionViewDelegat
     
     ///  設定 CollectionViewCell 的寬、高
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (self.collectionView.frame.size.width)/3
+        let width = (self.collectionView.frame.size.width - 40)/3
         return CGSize(width:width, height:96)
     }
     

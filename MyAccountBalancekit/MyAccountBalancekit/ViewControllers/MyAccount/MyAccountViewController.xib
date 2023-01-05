@@ -23,10 +23,10 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Hle-BH-dOZ">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="478"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="664"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7lc-wE-kRU">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="478"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="664"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pw-Kb-ED4" userLabel="MyAccountTopView" customClass="MyAccountTopView" customModule="MyAccountBalancekit" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
@@ -46,18 +46,32 @@
                                                 <constraint firstAttribute="height" constant="192" id="0ZF-Y0-cEk"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kyc-er-e0X" userLabel="PaymentMethodView" customClass="MyFavoriteTitleView" customModule="MyAccountBalancekit" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kyc-er-e0X" userLabel="MyFavoriteTitleView" customClass="MyFavoriteTitleView" customModule="MyAccountBalancekit" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="342" width="393" height="48"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="48" id="Vlz-0j-hhE"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whg-zb-hzi" userLabel="PaymentMethodView" customClass="FavoriteEmptyView" customModule="MyAccountBalancekit" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whg-zb-hzi" userLabel="FavoriteEmptyView'" customClass="FavoriteEmptyView" customModule="MyAccountBalancekit" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="390" width="393" height="88"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="750" constant="88" id="rPE-L4-Bpd"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUY-fk-WMw" userLabel="BannerView" customClass="BannerView" customModule="MyAccountBalancekit" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="478" width="393" height="96"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="750" constant="96" id="j3Q-lX-pPw"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTi-Gc-Tzb" userLabel="BottomView" customClass="BottomView" customModule="MyAccountBalancekit" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="574" width="393" height="90"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="GPH-ZL-nAV"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -79,7 +93,7 @@
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Blj-Tm-dTI" secondAttribute="trailing" id="5yW-l0-hVe"/>
                 <constraint firstItem="Blj-Tm-dTI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KHD-aE-59B"/>
