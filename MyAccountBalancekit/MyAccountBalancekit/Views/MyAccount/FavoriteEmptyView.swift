@@ -10,8 +10,6 @@ import UIKit
 @IBDesignable
 class FavoriteEmptyView: UIView, NibOwnerLoadable{
     
-    
-
     // MARK: - Initialier
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,7 +28,5 @@ private extension FavoriteEmptyView {
         loadNibContent()
         
     }
-    
-    
 }
 

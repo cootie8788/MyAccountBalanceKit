@@ -30,7 +30,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqL-P2-QyZ">
                             <rect key="frame" x="24" y="0.0" width="366" height="50"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsr-su-Z2f" userLabel="Site">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsr-su-Z2f" userLabel="Home">
                                     <rect key="frame" x="0.0" y="0.0" width="91.666666666666671" height="50"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTabbarHomeActive.png" translatesAutoresizingMaskIntoConstraints="NO" id="DuD-ji-hVh">
@@ -65,7 +65,7 @@
                                         <constraint firstAttribute="trailing" secondItem="nZe-3f-BEh" secondAttribute="trailing" id="wmv-Uq-enB"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezM-tc-bYg" userLabel="PunchHistory">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezM-tc-bYg" userLabel="Account">
                                     <rect key="frame" x="91.666666666666686" y="0.0" width="91.333333333333314" height="50"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTabbarAccountDefault.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jfz-BZ-vGV">
@@ -100,7 +100,7 @@
                                         <constraint firstItem="EsS-9f-zZP" firstAttribute="top" secondItem="Jfz-BZ-vGV" secondAttribute="bottom" constant="3" id="xm5-Up-8fl"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUr-sN-EB1" userLabel="Inbox">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUr-sN-EB1" userLabel="Location">
                                     <rect key="frame" x="183" y="0.0" width="91.666666666666686" height="50"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTabbarLocationActive.png" translatesAutoresizingMaskIntoConstraints="NO" id="4YT-R8-ide">
@@ -135,10 +135,10 @@
                                         <constraint firstItem="4JB-xM-P2B" firstAttribute="top" secondItem="4YT-R8-ide" secondAttribute="bottom" constant="3" id="y5W-uH-Feh"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-tH-QmZ" userLabel="ESS">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-tH-QmZ" userLabel="Service">
                                     <rect key="frame" x="274.66666666666669" y="0.0" width="91.333333333333314" height="50"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTabbarAccountDefault.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Lr-Gj-CnH">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTabbarServic.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Lr-Gj-CnH">
                                             <rect key="frame" x="33" y="6" width="25" height="25"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="25" id="78e-rD-k5D"/>
@@ -220,6 +220,7 @@
         <image name="icTabbarAccountDefault.png" width="25" height="24"/>
         <image name="icTabbarHomeActive.png" width="25" height="24"/>
         <image name="icTabbarLocationActive.png" width="25" height="24"/>
+        <image name="icTabbarServic.png" width="72" height="72"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

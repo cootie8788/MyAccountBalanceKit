@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct PaymentMethod {
     var imageStr:String
     var imageTitle:String

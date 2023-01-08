@@ -15,7 +15,6 @@ enum PanelChildPage {
     case Service
 }
 
-
 class PanelChildViewController: UIViewController {
     
     // MARK: IBOutlets
@@ -25,13 +24,20 @@ class PanelChildViewController: UIViewController {
     // MARK: Properties
     private var currentPage:PanelChildPage?
     private var homeChildController: MyAccountViewController?
-    private var accountChildController: AccountViewController?
-    private var locationChildController: LocationViewController?
-    private var serviceChildController: ServiceViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUi()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
     }
     
     // MARK: Init
@@ -44,8 +50,7 @@ class PanelChildViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    func showHomePage() {
+    private func showHomePage() {
         guard currentPage != .Home else {
             return
         }
@@ -59,7 +64,6 @@ class PanelChildViewController: UIViewController {
         showPageView(page: .Home)
     }
     
-    
     private func showPageView(page: PanelChildPage) {
         
         var relatedVC:UIViewController?
@@ -68,13 +72,13 @@ class PanelChildViewController: UIViewController {
             relatedVC = homeChildController
             break
         case .Account:
-            relatedVC = accountChildController
+            relatedVC = homeChildController
             break
         case .Location:
-            relatedVC = locationChildController
+            relatedVC = homeChildController
             break
         case .Service:
-            relatedVC = serviceChildController
+            relatedVC = homeChildController
         }
         guard let vc = relatedVC, children.contains(vc)  else{
             return
@@ -84,12 +88,6 @@ class PanelChildViewController: UIViewController {
         vc.view.frame = contentView.frame
         contentView.addSubview(vc.view)
         vc.didMove(toParent: self)
-        print("contentView.frame.height:\(contentView.frame.height)")
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        vc.view.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        vc.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        vc.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        vc.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         
         switch page {
         case .Home:
@@ -114,9 +112,8 @@ class PanelChildViewController: UIViewController {
         if currentPage == nil {
             showHomePage()
         }
-//        Style.RoundCorner.setRoundCorner(view: tabbarView, radius: 25, color: UIColor.white.cgColor)
+        
         Style.Shadow.setDefaultShadow(view: tabbarView, cornerRadius: 25)
     }
-    
     
 }

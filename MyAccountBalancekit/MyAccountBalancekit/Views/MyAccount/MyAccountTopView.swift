@@ -7,11 +7,20 @@
 
 import UIKit
 
+protocol MyAccountTopViewDelegate:AnyObject {
+    func goNotificationVC()
+}
+
 @IBDesignable
 class MyAccountTopView: UIView, NibOwnerLoadable{
     
+    // MARK: IBOutlets
+    @IBOutlet weak var bellImageView: UIImageView!
+    @IBOutlet weak var bellButton: UIButton!
     
-
+    // MARK: - Properties
+    weak var delegate:MyAccountTopViewDelegate?
+    
     // MARK: - Initialier
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,6 +31,15 @@ class MyAccountTopView: UIView, NibOwnerLoadable{
         super.init(coder: coder)
         customInit()
     }
+    
+    func setBellImageView(messagesList:[Notification]) {
+        bellImageView.image = UIImage(named: messagesList.isEmpty ? "iconBell01Nomal" : "iconBell02Active")
+        bellButton.isEnabled = !messagesList.isEmpty
+    }
+    
+    @IBAction func onBellBtnClick(_ sender: Any) {
+        delegate?.goNotificationVC()
+    }
 }
 
 // MARK: - private func
@@ -30,6 +48,4 @@ private extension MyAccountTopView {
         loadNibContent()
         
     }
-    
-    
 }

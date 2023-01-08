@@ -10,10 +10,10 @@ import UIKit
 @IBDesignable
 class PaymentMethodView: UIView, NibOwnerLoadable{
     
+    // MARK: IBOutlets
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var paymentMethodList:[PaymentMethod] = []
-    
     
     // MARK: - Initialier
     override init(frame: CGRect) {
@@ -69,7 +69,7 @@ extension PaymentMethodView: UICollectionViewDataSource, UICollectionViewDelegat
     
     ///  設定 CollectionViewCell 的寬、高
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (self.collectionView.frame.size.width - 40)/3
+        let width = (self.collectionView.bounds.size.width - 40)/3
         return CGSize(width:width, height:96)
     }
     
@@ -84,10 +84,7 @@ extension PaymentMethodView: UICollectionViewDataSource, UICollectionViewDelegat
         if let item = itemAt(indexPath: indexPath) {
             cell.setItem(item: item)
         }
-        
-        
         return cell
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

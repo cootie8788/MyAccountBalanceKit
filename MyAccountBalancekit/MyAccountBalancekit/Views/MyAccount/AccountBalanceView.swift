@@ -10,18 +10,57 @@ import UIKit
 @IBDesignable
 class AccountBalanceView: UIView, NibOwnerLoadable{
     
-    @IBOutlet weak var usdView: GradientView!
-    @IBOutlet weak var khrView: GradientView!
+    // MARK: IBOutlets
+    
+    @IBOutlet weak var khrView: ShimmerView!
+    @IBOutlet weak var usdView: ShimmerView!
+    @IBOutlet weak var usdLabel: UILabel!
+    @IBOutlet weak var khrLabel: UILabel!
+    @IBOutlet weak var eyesButton: UIButton!
+    @IBOutlet weak var eyesImageView: UIImageView!
+    
+    var usdTotalStr = ""
+    var khrTotalStr = ""
     
     // MARK: - Initialier
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         customInit()
+    }
+    
+    @IBAction func onEyeBtnClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        eyesImageView.image = eyesButton.isSelected ? UIImage(named: "iconEye02Off") : UIImage(named: "iconEye01On")
+        usdLabel.text = eyesButton.isSelected ? "********" : usdTotalStr
+        khrLabel.text = eyesButton.isSelected ? "********" : khrTotalStr
+        
+    }
+    
+    func setUsdTotalAmount(total:String) {
+        usdTotalStr = total
+        usdLabel.text = total
+        usdView.isHidden = true
+        usdLabel.isHidden = false
+        
+    }
+    
+    func setKhrTotalAmount(total:String) {
+        khrTotalStr = total
+        khrLabel.text = total
+        khrView.isHidden = true
+        khrLabel.isHidden = false
+        
+    }
+    
+    func showShimmer() {
+        usdView.isHidden = false
+        usdLabel.isHidden = true
+        khrView.isHidden = false
+        khrLabel.isHidden = true
     }
 }
 
@@ -29,12 +68,10 @@ class AccountBalanceView: UIView, NibOwnerLoadable{
 private extension AccountBalanceView {
     func customInit() {
         loadNibContent()
-        usdView.startColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
-        usdView.startColor = #colorLiteral(red: 0.9843137255, green: 0.9843137255, blue: 0.9843137255, alpha: 1)
-        khrView.startColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
-        khrView.startColor = #colorLiteral(red: 0.9843137255, green: 0.9843137255, blue: 0.9843137255, alpha: 1)
+        eyesButton.imageView?.contentMode = .scaleAspectFit
+        showShimmer()
+        usdView.startAnimating()
+        khrView.startAnimating()
     }
-    
-    
 }
 

@@ -9,6 +9,7 @@ import UIKit
 
 class PaymentMethodCollectionViewCell: UICollectionViewCell {
     
+    // MARK: IBOutlets
     @IBOutlet weak var paymentImageView: UIImageView!
     @IBOutlet weak var paymentTitleLabel: UILabel!
     

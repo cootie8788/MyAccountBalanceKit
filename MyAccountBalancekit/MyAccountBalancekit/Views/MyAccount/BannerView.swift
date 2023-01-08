@@ -10,10 +10,11 @@ import UIKit
 @IBDesignable
 class BannerView: UIView, NibOwnerLoadable{
     
+    // MARK: IBOutlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pages: UIPageControl!
     
-    var imageArray = ["avatar","iconBell01Nomal","button00ElementScrollEmpty","button00ElementScrollEmpty","button00ElementScrollEmpty"]
+    var items:[Banner] = []
     var index = 0
     
     // MARK: - Initialier
@@ -25,6 +26,11 @@ class BannerView: UIView, NibOwnerLoadable{
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         customInit()
+    }
+    
+    func setBanner(list:[Banner]) {
+        items = list
+        collectionView.reloadData()
     }
 }
 
@@ -47,38 +53,44 @@ private extension BannerView {
     }
     
     @objc func pageSetup(){
-        if index < imageArray.count - 1 {
+        if index < items.count - 1 {
             index = index + 1
         }else {
             index = 0
         }
-        pages.numberOfPages = imageArray.count
+        pages.numberOfPages = items.count
         pages.currentPage = index
         collectionView.scrollToItem(at: IndexPath(item: index, section: 0), at: .right, animated: true)
         
     }
     
+    func itemAt(indexPath:IndexPath) -> Banner?{
+        guard indexPath.row >= 0 && indexPath.row < items.count else{
+            return nil
+        }
+        return items[indexPath.row]
+    }
 }
 
 // MARK: CollectionViewDataSource, UICollectionViewDelegate
 extension BannerView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArray.count
+        return items.isEmpty ? 1 : items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCollectionViewCell", for:
                                                                 indexPath) as? BannerCollectionViewCell else { return UICollectionViewCell()}
-        cell.imageView.image = UIImage(named: imageArray[indexPath.row])
+        if let item = itemAt(indexPath: indexPath) {
+            cell.setItem(item: item)
+        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
-    
-    
 }
 
 

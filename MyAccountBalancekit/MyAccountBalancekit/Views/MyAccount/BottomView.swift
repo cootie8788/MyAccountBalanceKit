@@ -9,8 +9,6 @@ import UIKit
 @IBDesignable
 class BottomView: UIView, NibOwnerLoadable{
     
-    
-
     // MARK: - Initialier
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,8 +25,5 @@ class BottomView: UIView, NibOwnerLoadable{
 private extension BottomView {
     func customInit() {
         loadNibContent()
-        
     }
-    
-    
 }

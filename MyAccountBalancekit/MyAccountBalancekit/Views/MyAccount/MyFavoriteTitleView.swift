@@ -10,11 +10,9 @@ import UIKit
 @IBDesignable
 class MyFavoriteTitleView: UIView, NibOwnerLoadable{
     
-    
     // MARK: - Initialier
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
     }
     
     required init?(coder: NSCoder) {
@@ -22,7 +20,7 @@ class MyFavoriteTitleView: UIView, NibOwnerLoadable{
         customInit()
     }
     
-    
+    // MARK: IBActions
     @IBAction func onMoreButtonClick(_ sender: Any) {
     }
 }
