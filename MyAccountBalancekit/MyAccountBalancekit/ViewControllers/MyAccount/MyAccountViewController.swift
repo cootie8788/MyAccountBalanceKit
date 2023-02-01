@@ -26,6 +26,7 @@ class MyAccountViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ///
+        ///dog
         setUI()
         binding()
         viewModel.getEmptyNotificationList()
